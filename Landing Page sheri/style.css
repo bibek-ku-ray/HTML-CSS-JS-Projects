@@ -1,7 +1,13 @@
+@font-face{
+    font-family: kajiro;
+    src: url(image_font/KajiroBold.ttf);
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'gilroy';
 }
 
 html, body{
@@ -53,7 +59,7 @@ html, body{
 
 #nleft a, #nright a{
     color: #fff;
-    font-family: 'gilroy';
+
     text-decoration: none;
     text-transform: uppercase;
     font-size: 12px;
@@ -79,10 +85,34 @@ html, body{
 
 #heroleft{
     min-width: 50%;
-    background-color: yellow;
+}
+
+#heroleft .elem{
+    height: 9vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+#heroleft .elem h1{
+    line-height: .9;
+    font-family: 'kajiro';
+    color: #fff;
+    font-weight: 100;
+    font-size: 11vw;
+}
+ 
+#heroleft button{
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    margin-top: 2vw;
+    font-family: kajiro;
 }
 
 #heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     min-width: 25%;
+    color: #fff;
     background-color: rgb(4, 252, 66);
 }
